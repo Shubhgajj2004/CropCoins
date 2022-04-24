@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.Profile_frag">
+
+    <TextView
+        android:id="@+id/temp_name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Name :"
+        android:textSize="16sp" />
+
+   <TextView
+        android:id="@+id/temp_state4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State :"
+       android:layout_below="@+id/temp_name4"
+       android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        />
+ <TextView
+        android:id="@+id/temp_dist4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City :"
+       android:layout_below="@+id/temp_state4"
+       android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OWL"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:id="@+id/state_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gujarat"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+    android:layout_below="@+id/Name_profile"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        />
+   <TextView
+        android:id="@+id/Dist_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahmedabad"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+    android:layout_below="@+id/state_profile"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_buy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+    <TextView
+        android:id="@+id/text_auction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Auction"
+        android:textColor="#2E2E2E"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/type_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_auction"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="1) Type:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/seller_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type_buy"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="2) Seller:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/original_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_buy"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="3) Original AgriCoins:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/amount_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/original_buy"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="4) Load:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/type_buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_auction"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="30dp"
+        android:text="Wheat"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/type_buy"
+        android:textColor="@color/black"/>
+
+ <TextView
+     android:id="@+id/seller_buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type_buy"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Ramesh"
+        android:textSize="20sp"
+     android:textColor="@color/black"
+        android:layout_toRightOf="@+id/seller_buy"/>
+
+    <TextView
+        android:id="@+id/original_buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_buy"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/original_buy"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+     <TextView
+     android:id="@+id/load_buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/original_buy2"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:text="100kg"
+        android:textSize="20sp"
+         android:textColor="@color/black"
+
+        android:layout_toRightOf="@+id/amount_buy"/>
+
+
+
+     <TextView
+     android:id="@+id/text_Auction_price_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_buy"
+
+        android:layout_marginTop="50dp"
+        android:text="5) Your Amount(In AgriCoint) : "
+        android:textSize="20sp"
+         android:textColor="@color/black"
+         android:layout_centerHorizontal="true"
+       />
+
+    <EditText
+        android:id="@+id/Auction_price_buy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_Auction_price_buy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_input"
+        android:hint="XYX(Agricoin)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Buy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Auction_price_buy"
+        android:layout_centerHorizontal="true"
+        android:text="Buy"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input_cart"
+        android:backgroundTint="#9EC7F8"/>
+
+    <TextView
+        android:id="@+id/text_PYauction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Buy_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Previous Auction"
+        android:textColor="#2E2E2E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name_buyer_temp"
+                android:layout_below="@+id/text_PYauction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="19sp"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/bid_buyer_temp"
+                android:layout_below="@+id/text_PYauction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bid"
+                android:textSize="19sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:textColor="@color/black"
+                />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/PY_auction_res"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_buyer_temp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

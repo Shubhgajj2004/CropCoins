@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "483911043454",
+    "project_id": "cropcoins",
+    "storage_bucket": "cropcoins.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483911043454:android:21194cdba947b2b4f30b2f",
+        "android_client_info": {
+          "package_name": "com.shubh.cropcoins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483911043454-7h0jnc3ciiqj4ak248a67bm8uq0cp8gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB97inmCPPsLFVqTJE3FBrvH8AMcx--zqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483911043454-7h0jnc3ciiqj4ak248a67bm8uq0cp8gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.Home_frag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <View
+        android:id="@+id/wallet_icon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/wallet" />
+
+    <TextView
+        android:id="@+id/logo_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="AgriChain"
+        android:textColor="#6A6A6A"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sample_affair1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current affairs"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:layout_below="@+id/logo_home"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/current_affair1"
+        />
+
+    <TextView
+        android:id="@+id/sample_affair2"
+        android:layout_width="274dp"
+        android:layout_height="278dp"
+        android:layout_below="@+id/sample_affair1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/affair_2"
+        android:gravity="center"
+        android:text="Statistics"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

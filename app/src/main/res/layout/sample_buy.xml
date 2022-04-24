@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="10dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input_cart"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/temp_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/temp_type3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp_name3"
+            android:layout_marginTop="8dp"
+            android:text="seller:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/temp_name_vacc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp_type3"
+            android:layout_marginTop="8dp"
+            android:text="AgriCoins(Min):"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/temp_next_date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coins_sample"
+            android:layout_marginTop="8dp"
+            android:text="Amount :"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Type_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/temp_name3"
+            android:text="Wheat"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Seller_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp_name3"
+            android:layout_marginLeft="97dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/temp_type3"
+            android:text="suresh"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/coins_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp_type3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/temp_name_vacc3"
+            android:text="120"
+            android:textColor="#EE001C"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Amount_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coins_sample"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/temp_next_date3"
+            android:text="1000Kg"
+            android:textColor="#FF7931"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

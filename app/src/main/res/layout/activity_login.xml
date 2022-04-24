@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9281FF"
+    tools:context=".LoginAct">
+
+    <TextView
+        android:id="@+id/welcome_to"
+        android:layout_width="236dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/bentham"
+        android:gravity="top"
+        android:text="Welcome to"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp" />
+
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="200dp"
+        android:layout_height="114dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="-28dp"
+        android:background="@drawable/ic_ellipse_2" />
+
+
+    <TextView
+        android:id="@+id/yuwon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="74dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="top"
+        android:text="Agrichain"
+        android:textAppearance="@style/yuwon"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#FF0606" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@+id/yuwon"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/round">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/Viewpag2"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_below="@+id/TabLayout"
+            android:layout_marginTop="22dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
