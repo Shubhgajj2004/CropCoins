@@ -8,12 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.shubh.cropcoins.All_stats;
-import com.shubh.cropcoins.R;
-import com.shubh.cropcoins.databinding.FragmentBuyFragBinding;
 import com.shubh.cropcoins.databinding.FragmentHomeFragBinding;
+import com.shubh.cropcoins.wallet_detail;
 
 
 public class Home_frag extends Fragment {
@@ -38,6 +36,13 @@ public class Home_frag extends Fragment {
             public void onClick(View v) {
 
                 startActivity(new Intent(getContext() , All_stats.class));
+            }
+        });
+
+        binding.walletIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext() , wallet_detail.class));
             }
         });
 

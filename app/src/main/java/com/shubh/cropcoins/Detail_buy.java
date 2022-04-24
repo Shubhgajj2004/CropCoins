@@ -34,6 +34,9 @@ public class Detail_buy extends AppCompatActivity {
     ArrayList<modal_pybuy> list= new ArrayList<>();
 
 
+    double final2;
+
+
     adapter_Pybuy adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,33 +60,44 @@ public class Detail_buy extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                database.getReference().child("AllUserSells").child(getIntent().getStringExtra("key")).child("Minbid").setValue(binding.AuctionPriceBuy.getText().toString()).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        Toast.makeText(getApplicationContext(), "Bought Succesfully", Toast.LENGTH_SHORT).show();
-                    }
-                });
 
 
 
-                database.getReference().child("User").child(user.getUid()).child("Name").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (final2 != 0)
+                {
+                    database.getReference().child("AllUserSells").child(getIntent().getStringExtra("key")).child("Minbid").setValue(binding.AuctionPriceBuy.getText().toString()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            Toast.makeText(getApplicationContext(), "Bought Succesfully", Toast.LENGTH_SHORT).show();
+                        }
+                    });
 
 
-                        DatabaseReference reference =  database.getReference().child("AllUserSells").child(getIntent().getStringExtra("key")).child("Buyer").push();
+                    database.getReference().child("User").child(user.getUid()).addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                        reference.child("Buyer").setValue(snapshot.getValue(String.class));
-                        reference.child("Bid").setValue(binding.AuctionPriceBuy.getText().toString());
+
+                            DatabaseReference reference =  database.getReference().child("AllUserSells").child(getIntent().getStringExtra("key")).child("Buyer").push();
+
+                            reference.child("Buyer").setValue(snapshot.child("Name").getValue(String.class));
+                            reference.child("Bid").setValue(binding.AuctionPriceBuy.getText().toString());
+
+                            notify();
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
 
 
-                    }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
 
-                    }
-                });
+                }
+
 
 
 
@@ -123,6 +137,8 @@ public class Detail_buy extends AppCompatActivity {
 
 
     }
+
+
 
 
 }

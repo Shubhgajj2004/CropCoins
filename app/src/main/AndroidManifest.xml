@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CropCoins">
         <activity
+            android:name=".wallet_detail"
+            android:exported="false" />
+        <activity
             android:name=".All_stats"
             android:exported="false" />
         <activity

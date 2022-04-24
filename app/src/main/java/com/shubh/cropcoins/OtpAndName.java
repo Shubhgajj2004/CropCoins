@@ -126,6 +126,7 @@ public class OtpAndName extends AppCompatActivity {
                                    DatabaseReference reference = database.getReference().child("User").child(user.getUid());
 
                                    reference.child("PhoneNo").setValue(combine_phone2);
+                                   reference.child("Balance").setValue("0");
                                }
 
                                 layout.setVisibility(View.VISIBLE);
